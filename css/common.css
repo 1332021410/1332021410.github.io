@@ -1,0 +1,483 @@
+/* 浮动 */
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* 调试用的边框 */
+.bd {
+    border: 1px solid #f00;
+    box-sizing: border-box;
+}
+
+/* 字体颜色为白色 */
+.white {
+    color: white;
+}
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 产品展示与新闻动态标题公用部分 */
+.title div {
+    height: 90px;
+    font-size: 28px;
+    line-height: 38px;
+    color: #252525;
+    background: url(../images/nav_bg02.png) no-repeat 0px 0px;
+}
+
+
+.title small {
+    font-size: 22px;
+    line-height: 38px;
+    color: #bbb8b5;
+}
+/* 页脚标题公用部分 */
+#footer .top h1 {
+    height: 60px;
+    font-size: 19px;
+    line-height: 38px;
+    color: #ffffff;
+    background: url(../images/nav_bg02.png) no-repeat 0px 0px;
+}
+
+/* 欢迎来到家居网 */
+#head {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    min-width: 1300px;
+    background: rgba(255, 255, 255, 0.7); /* 半透明背景 */
+    line-height: 45px;
+    color: black;
+    z-index: 10; /* 确保头部覆盖在图片之上 */
+}
+#head img {
+    filter: invert(1); /* 将白色转换为黑色 */
+}
+
+
+#head a {
+    color: black; /* 黑色字体 */
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+
+
+#banner {
+    height: 550px;
+    min-width: 1300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 27px;
+}
+#banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+#banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#banner .content {
+    width: 458px;
+    height: 175px;
+    background: url(../images/border.png) no-repeat;
+    text-align: center;
+    padding-top: 37px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+#banner .content h1 {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#banner .content p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 40px;
+    color: #ffffff;
+}
+/* logo和导航栏 */
+/* 导航栏样式 rgba(178, 34, 34, 0.9)*/
+#nav {
+    position: relative;
+    top: -50pt;
+    left: 0;
+    right: 0;
+    background-color: #bc2b2f; /* 半透明背景 */
+    padding: 10px 0;
+    width: 100%; /* 让导航栏宽度与页面一致 */
+    min-width: 1300px; /* 最大宽度限制 */
+    border-radius: 50px 50px 0 0; /* 顶部圆角 */
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 10;
+    margin: 0 auto; /* 居中对齐 */
+}
+
+/* 调整 logo 和导航项位置 */
+#nav img {
+    margin: 0; /* 去除左侧和其他元素的间距 */
+    vertical-align: middle; /* 垂直居中对齐 */
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center; /* 让导航项与图片垂直居中 */
+    
+}
+
+#nav li {
+    margin: 0 40px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+/* 当前选中项样式 */
+#nav .active a::before,
+#nav li:hover a::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #b71c1c;
+}
+
+
+
+
+/* 大图片 */
+#bigpic {
+    height: 310px;
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#bigpic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#bigpic .content {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    z-index: 2;
+}
+
+#bigpic .content h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#bigpic .content p {
+    font-size: 18px;
+}
+
+
+/* 图片下方文字公共样式 */
+#word {
+    height: 50px;
+    min-width: 1200px;
+    border-bottom: 2px solid #d32f2f; /* 边框改为红色且稍粗 */
+    line-height: 50px;
+    color: #d32f2f; /* 文字改为红色 */
+    margin-bottom: 33px;
+    background-color: #fff5f5; /* 浅红色背景 */
+    font-size: 18px; /* 增加字体大小 */
+    font-weight: bold; /* 加粗文字 */
+    text-align: left; /* 保持居左 */
+    padding-left: 20px; /* 增加左侧内边距 */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* 添加底部阴影 */
+    border-radius: 8px; /* 添加圆角 */
+}
+
+#word p {
+    margin: 0; /* 去除默认的段落外边距 */
+}
+
+#word a {
+    color: #d32f2f; /* 链接颜色 */
+    text-decoration: none; /* 去除下划线 */
+    font-weight: bold;
+}
+
+#word a:hover {
+    color: #b71c1c; /* 鼠标悬停时变为更深的红色 */
+}
+
+/* 关于我们 产品展示 联系我们 在线留言 左边部分 */
+.content .left {
+    width: 260px;
+    background-color: #fff5f5; /* 浅红色背景，增添红色主题 */
+    border: 1px solid #d32f2f; /* 红色边框 */
+    padding: 10px;
+    border-radius: 8px; /* 圆角边框 */
+}
+
+.content .left ul {
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none; /* 去除默认的列表样式 */
+}
+
+.content .left li {
+    height: 48px;
+    width: 100%;
+    background: #d32f2f; /* 深红色背景 */
+    text-align: center;
+    margin-bottom: 6px; /* 增加间距 */
+    line-height: 48px;
+    border-radius: 4px; /* 圆角 */
+    transition: background 0.3s ease; /* 鼠标悬停时的动画效果 */
+}
+
+.content .left li:hover {
+    background: #b71c1c; /* 鼠标悬停时变为更深的红色 */
+}
+
+.content .left li a {
+    color: #ffffff; /* 文字改为白色 */
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none; /* 去除下划线 */
+}
+
+.content .left img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* 图片与列表之间的间距 */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+/* 新闻列表 新闻详情页共用左边 */
+.newscontent .left {
+    width: 260px;
+    background-color: #fff5f5; /* 浅红色背景，增添红色主题 */
+    border: 1px solid #d32f2f; /* 红色边框 */
+    padding: 10px;
+    border-radius: 8px; /* 圆角边框 */
+}
+
+.newscontent .left li {
+    height: 48px;
+    width: 100%;
+    background: #d32f2f; /* 深红色背景 */
+    text-align: center;
+    margin-bottom: 6px; /* 增加间距 */
+    line-height: 48px;
+    border-radius: 4px; /* 圆角 */
+    transition: background 0.3s ease; /* 鼠标悬停时的动画效果 */
+    
+}
+.newscontent .left li:hover {
+    background: #b71c1c; /* 鼠标悬停时变为更深的红色 */
+}
+
+.newscontent .left ul {
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none; /* 去除默认的列表样式 */
+}
+
+.newscontent .left li a {
+    font-weight: 700;
+    color: #ffffff; /* 文字改为白色 */
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none; /* 去除下划线 */
+}
+
+.newscontent .left img {
+    width: 260px;
+    height: 260px;
+    margin-top: 20px;
+}
+
+/* 页脚 */
+#footer {
+    height: 380px;
+    background: #bc2b2f;
+    min-width: 1200px;
+    padding-top: 70px;
+}
+
+#footer .top {
+    height: 275px;
+}
+
+#footer .top>div {
+    float: left;
+}
+
+/* 页脚联系方式 */
+/* 页脚上半部分 */
+#footer .top .contact {
+    width: 400px;
+    margin-right: 40px;
+}
+
+#footer .top .contact img {
+    margin-bottom: 35px;
+}
+
+#footer .top .contact a {
+    color: #6b6d71;
+}
+
+#footer .top .contact div {
+    font-size: 13px;
+    line-height: 38px;
+    color: white;
+    height: 30px;
+    margin-top: 15px;
+}
+
+#footer .top .contact .pic1 {
+    background: url(../image/icon.png) no-repeat 0px 10px;
+}
+
+#footer .top .contact .pic2 {
+    background: url(../image/icon.png) no-repeat 0px -32px;
+     /* 将白色转换为黑色 */
+}
+
+#footer .top .contact .pic3 {
+    background: url(../image/icon.png) no-repeat 0px -74px;
+     /* 将白色转换为黑色 */
+}
+
+/* 页脚快速链接 */
+#footer .top .interlinkage {
+    width: 235px;
+    height: 172px;
+    margin-right: 100px;
+}
+
+#footer .top .interlinkage ul {
+    width: 68px;
+    height: 99px;
+    font-size: 14px;
+    line-height: 40px;
+    float: left;
+    margin-top: 23px;
+    margin-right: 40px;
+}
+
+#footer .top .interlinkage a {
+    color: white;
+}
+
+
+/* 页脚站内搜索 */
+#footer .top .search {
+    margin-top: 14px;
+}
+
+#footer .top .search input {
+    width: 221px;
+    height: 47px;
+    margin-top: 35px;
+    background: white;
+    border: 0 solid #000;
+}
+
+#footer .top .search button {
+    border: 0 solid #000;
+    width: 102px;
+    height: 47px;
+    background: #3aa27f;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#footer .top .search a {
+    color: white;
+}
+
+/* 页脚下半部分 */
+#footer .bottom {
+    height: 35px;
+    background: #000;
+    text-align: center;
+    line-height: 35px;
+}
+
+#footer .bottom p {
+    color: white;
+    
+}

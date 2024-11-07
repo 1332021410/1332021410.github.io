@@ -1,0 +1,102 @@
+/* 在线留言右边部分 */
+#onlineMessage .content .right {
+    width: 900px;
+    margin-left: 14px;
+    margin-bottom: 90px;
+    padding-top: 10px;
+}
+
+#onlineMessage .content .right h1 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #3f3e45;
+    margin-bottom: 20px;
+}
+
+#onlineMessage .content .right span {
+    color: red;
+}
+
+#onlineMessage .content .right input,
+#onlineMessage .content .right textarea {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#onlineMessage .content .right .input1 {
+    width: 800px;
+    height: 40px;
+}
+
+#onlineMessage .content .right textarea {
+    height: 75px;
+    width: 800px;
+}
+
+
+#onlineMessage .right .bottom1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#onlineMessage .right .bottom1 span {
+    font-size: 14px;
+    color: #19191a;
+    margin-right: 10px;
+}
+
+#onlineMessage .right .bottom1 button {
+    border: 1px solid #cccccc;
+    background: #fff;
+    height: 25px;
+}
+
+#onlineMessage .right .bottom1 .btn1 {
+    border: 0 solid #000;
+    color: #f00;
+}
+
+
+
+
+#onlineMessage .right {
+    width: 900px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+#onlineMessage .right .top div {
+    width: 284px;
+    height: 333px;
+    border: 1px solid #f3f3f3;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+#onlineMessage .right .top div img {
+    width: 250px;
+    height: 250px;
+    margin-top: 17px;
+    margin-left: 17px;
+    margin-right: 17px;
+    border: 1px solid #f3f3f3;
+}
+
+#onlineMessage .right .top div p {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #3f3e45;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#onlineMessage .right .top div span {
+    font-size: 12px;
+    line-height: 28px;
+    color: #a5a5b1;
+}

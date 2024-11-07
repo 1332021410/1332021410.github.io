@@ -1,0 +1,41 @@
+#banner {
+    height: 550px;
+    min-width: 1200px;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+#banner img {
+    height: 100%;
+    width: 100%;
+}
+
+#banner .content {
+    width: 458px;
+    height: 175px;
+    background: url(../images/border.png) no-repeat;
+    text-align: center;
+    padding-top: 37px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#banner .content h1 {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#banner .content p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 40px;
+    color: #ffffff;
+}
